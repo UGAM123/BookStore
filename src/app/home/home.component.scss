@@ -1,0 +1,130 @@
+$primary-color: #8d43f0;
+.homepage-new-release {
+  padding: 0px 40px;
+  display: flex;
+  //   justify-content: space-between;
+  max-width: 1240px;
+  margin: 0px auto;
+  gap: 35px;
+  .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    // :first-child {
+    //   color: $primary-color;
+    // }
+    h1 {
+      margin: 25px 0px;
+      font-size: 82px;
+      font-weight: 500;
+      font-family: "EB Garamond", serif;
+      line-height: 1.4em;
+      word-spacing: 15px;
+
+      color: #000;
+    }
+    h6 {
+      margin: 20px 0px;
+      padding-top: 25px;
+      font-weight: 600;
+      font-size: 0.8125rem;
+      letter-spacing: 3px;
+      line-height: 1.25em;
+      color: $primary-color;
+    }
+    section {
+      margin: 30px 0px;
+      color: #fff;
+      :first-child {
+        margin-right: 20px;
+        width: 105px;
+        height: 45px;
+      }
+      :last-child {
+        width: 145px;
+        height: 45px;
+      }
+    }
+  }
+  .right {
+    width: 45%;
+    padding-left: 40px;
+    max-width: 400px;
+    max-height: 600px;
+    align-self: center;
+    aspect-ratio: auto 400 / 600;
+  }
+}
+
+.home-author-section-container {
+  background-image: url(https://websitedemos.net/book-store-02/wp-content/uploads/sites/834/2021/04/book-store-bio-section-bg-img.svg);
+  background-size: 40%;
+  background-repeat: no-repeat;
+  .home-author-section {
+    width: 1240px;
+    margin: 0 auto;
+    padding: 50px;
+    display: flex;
+
+    .left {
+      width: 40%;
+      img{
+        margin: 0 auto;
+        padding: 15px;
+      }
+    }
+    .right {
+      width: 60%;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 785px) {
+  .homepage-new-release {
+    .left {
+      h1 {
+        font-size: 64px;
+      }
+    }
+    .right {
+      padding: 0px 0px 0px 0px;
+      width: 330px;
+      height: 525px;
+    }
+  }
+}
+@media screen and (max-width: 785px) {
+  .homepage-new-release {
+    width: 100%;
+    flex-direction: column-reverse;
+    margin: 0px;
+    padding: 0px;
+    .left {
+      text-align: center;
+      width: 100%;
+      h1 {
+        font-size: 64px;
+        word-spacing: 3px;
+        margin: 20px 0px;
+      }
+      h6 {
+        line-height: 1.2em;
+        margin-bottom: 20px;
+      }
+      section {
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        margin: 25px auto;
+        :first-child {
+          align-self: flex-start;
+        }
+      }
+    }
+    .right {
+      padding: 0px 0px 0px 0px;
+      width: 400px;
+      height: 600px;
+    }
+  }
+}

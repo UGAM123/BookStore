@@ -1,0 +1,25 @@
+<div class="homepage-new-release">
+  <section class="left">
+    <h6>NEW RELEASE</h6>
+    <h1>{{ bookName }}</h1>
+    <p *ngIf="firstSentence != ''">{{ firstSentence }}...</p>
+    <section>
+      <button mat-flat-button color="primary">Buy Now</button>
+      <button mat-stroked-button color="primary">Read Sample</button>
+    </section>
+  </section>
+  <img class="right" src="{{ bookImgSrc }}" />
+</div>
+<div class="home-author-section-container">
+  <div class="home-author-section">
+    <section class="left">
+      <img src="{{ authorImgSrc }}" />
+    </section>
+    <section class="right">
+      <h6>AUTHOR INFO</h6>
+      <h1>Author Name</h1>
+      <p>Author information*</p>
+      <button mat-stroked-button color="primary">Read Sample</button>
+    </section>
+  </div>
+</div>
